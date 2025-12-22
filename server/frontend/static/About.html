@@ -1,68 +1,124 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Best Cars Dealership</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/static/style.css">
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-info py-3">
+  <div class="container-fluid">
+    <h2 class="navbar-brand mb-0">Dealerships</h2>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact Us</a>
+        </li>
+      </ul>
     </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+  </div>
+</nav>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main class="container my-5">
+
+  <!-- About Section -->
+  <section class="card shadow-sm p-4 mb-5">
+    <header class="text-center mb-4">
+      <h1 class="fw-bold">About Us</h1>
+    </header>
+
+    <p class="text-center">
+      Welcome to <strong>Best Cars Dealership</strong>, home to the best cars in
+      North America. We specialize in selling both domestic and imported cars
+      at affordable and competitive prices, with a strong focus on customer
+      satisfaction and trust.
+    </p>
+  </section>
+
+  <!-- Team Section -->
+  <section class="row justify-content-center g-4">
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card h-100 shadow-sm text-center">
+        <img src="/static/person.png" class="card-img-top" alt="Person 1 profile">
         <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+          <h5 class="card-title">Person One</h5>
+          <p class="text-muted">Sales Manager</p>
+          <p class="card-text">
+            Experienced automotive professional focused on helping customers
+            find the best value for their needs.
+          </p>
+          <p class="fw-semibold">person1@example.com</p>
         </div>
       </div>
+    </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+    <div class="col-md-4 col-sm-6">
+      <div class="card h-100 shadow-sm text-center">
+        <img src="/static/person.png" class="card-img-top" alt="Person 2 profile">
         <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+          <h5 class="card-title">Person Two</h5>
+          <p class="text-muted">Technical Lead</p>
+          <p class="card-text">
+            Oversees vehicle inspections and ensures all cars meet quality
+            and safety standards.
+          </p>
+          <p class="fw-semibold">person2@example.com</p>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
-</div>
 
+    <div class="col-md-4 col-sm-6">
+      <div class="card h-100 shadow-sm text-center">
+        <img src="/static/person.png" class="card-img-top" alt="Person 3 profile">
+        <div class="card-body">
+          <h5 class="card-title">Person Three</h5>
+          <p class="text-muted">Customer Relations</p>
+          <p class="card-text">
+            Dedicated to providing excellent customer service and post-purchase
+            support.
+          </p>
+          <p class="fw-semibold">person3@example.com</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-light text-center py-3 mt-5">
+  <small>&copy; 2025 Best Cars Dealership. All rights reserved.</small>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="/static/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
