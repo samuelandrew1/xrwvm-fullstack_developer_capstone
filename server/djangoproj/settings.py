@@ -46,11 +46,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -143,4 +145,20 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/static'),
 	os.path.join(BASE_DIR, 'frontend/build'),
 	os.path.join(BASE_DIR, 'frontend/build/static'),
+]
+
+CORS_ALLOWED_ORIGINS = [
+ "https://samuelandrew-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai",
+
+]
+
+CORS_ALLOWED_ORIGINS = [
+ 
+ "https://samuelandrew-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai",
+
+]
+
+CSRF_TRUSTED_ORIGINS = [
+ "https://samuelandrew-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai",
+
 ]
