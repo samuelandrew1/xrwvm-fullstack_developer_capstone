@@ -1,0 +1,4 @@
+(djangoenv) theia@theia-samuelandrew:/home/project/xrwvm-fullstack_developer_capstone/server/frontend$ c
+url -X GET "https://samuelandrew-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/djangoapp/logout"
+{"status": "Logged out"}(djangoenv) theia@theia-samuelandrew:/home/project/xrwvm-fullstack_developer_capstone/s
+erver/frontend$ 
